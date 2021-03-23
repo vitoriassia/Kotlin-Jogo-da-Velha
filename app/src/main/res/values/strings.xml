@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">kJogodaVelha</string>
+    <string name="image_title_app">image_title_app</string>
+    <string name="restart_btn_label">Reiniciar</string>
+</resources>

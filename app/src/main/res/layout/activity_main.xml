@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context=".MainActivity">
+
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/jogo_da_velha"
+            android:adjustViewBounds="false"
+            android:scaleType="centerInside"
+            android:contentDescription="@string/image_title_app" />
+
+    <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            android:gravity="center">
+
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+            <Button
+                    android:id="@+id/btn1_row1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    style="@style/BtnGame" />
+
+            <Button
+                    android:id="@+id/btn2_row1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    style="@style/BtnGame" />
+
+            <Button
+                    android:id="@+id/btn3_row1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    style="@style/BtnGame" />
+        </TableRow>
+
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+            <Button
+                    android:id="@+id/btn1_row2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    style="@style/BtnGame" />
+
+            <Button
+                    android:id="@+id/btn2_row2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    style="@style/BtnGame" />
+
+            <Button
+                    android:id="@+id/btn3_row2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    style="@style/BtnGame" />
+        </TableRow>
+
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+            <Button
+                    android:id="@+id/btn1_row3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    style="@style/BtnGame" />
+
+            <Button
+                    android:id="@+id/btn2_row3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    style="@style/BtnGame" />
+
+            <Button
+                    android:id="@+id/btn3_row3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    style="@style/BtnGame" />
+        </TableRow>
+
+
+    </TableLayout>
+
+    <Button
+            android:id="@+id/restart"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:text="@string/restart_btn_label"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:onClick="restartGame"
+            />
+</LinearLayout>
